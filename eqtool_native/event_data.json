@@ -1,0 +1,99 @@
+{
+ "boats": [
+  {
+   "boat": 0,
+   "name": "Barrel Barge",
+   "start": "oasis",
+   "start_zone": "Oasis",
+   "end": "timorous",
+   "end_zone": "Timorous Deep",
+   "pretty": "Oasis arrival",
+   "announce": "Rack Stonebelly shouts, 'Da Barrel Barge will be here soon soon!",
+   "dock": 119,
+   "trip": 779.75
+  },
+  {
+   "boat": 0,
+   "name": "Barrel Barge",
+   "start": "timorous",
+   "start_zone": "Timorous Deep",
+   "end": "oasis",
+   "end_zone": "Oasis",
+   "pretty": "TD from Oasis arrival",
+   "announce": "",
+   "dock": 510,
+   "trip": 778.75
+  },
+  {
+   "boat": 1,
+   "name": "Bloated Belly",
+   "start": "overthere",
+   "start_zone": "The Overthere",
+   "end": "timorous",
+   "end_zone": "Timorous Deep",
+   "pretty": "Overthere arrival",
+   "announce": "Rack Stonebelly shouts, 'Da Bloated Belly be leaving da Overdere now!",
+   "dock": 1975,
+   "trip": 2025.0
+  },
+  {
+   "boat": 2,
+   "name": "Maiden's Voyage",
+   "start": "butcher",
+   "start_zone": "Butcherblock",
+   "end": "firiona",
+   "end_zone": "Firiona Vie",
+   "pretty": "BB to FV Transfer arrival",
+   "announce": "Glisse Bluesea shouts 'The Maiden's Voyage is now ready to be boarded. Please form an orderly line to the shuttles, and remember, no pushing!",
+   "dock": 0,
+   "trip": 1230.0
+  },
+  {
+   "boat": 2,
+   "name": "Maiden's Voyage",
+   "start": "firiona",
+   "start_zone": "Firiona Vie",
+   "end": "butcher",
+   "end_zone": "Butcherblock",
+   "pretty": "FV Transfer to BB arrival",
+   "announce": "Glisse Bluesea shouts 'The Maiden's Voyage has departed the outpost at Firiona Vie. Please be ready to board the shuttles shortly, if you desire to make the journey to Kunark.",
+   "dock": 771,
+   "trip": 1230.0
+  },
+  {
+   "boat": 3,
+   "name": "NRo-Iceclad boat",
+   "start": "nro",
+   "start_zone": "Northern Desert of Ro",
+   "end": "iceclad",
+   "end_zone": "Iceclad Ocean",
+   "pretty": "NRo arrival",
+   "announce": "Frankel the Pirate says 'Thar she be mates. All aboard thats goin aboard!",
+   "dock": 0,
+   "trip": 519.0
+  },
+  {
+   "boat": 3,
+   "name": "NRo-Iceclad boat",
+   "start": "iceclad",
+   "start_zone": "Iceclad Ocean",
+   "end": "nro",
+   "end_zone": "Northern Desert of Ro",
+   "pretty": "Iceclad from NRo arrival",
+   "announce": "",
+   "dock": 307,
+   "trip": 519.0
+  }
+ ],
+ "ringwar": {
+  "trigger": "Seneschal Aldikar shouts",
+  "text": "TROOPS, TAKE YOUR POSITIONS!",
+  "waves": 3,
+  "rounds": 7,
+  "round_seconds": 210,
+  "break_seconds": 300
+ },
+ "ch": {
+  "seconds": 10
+ }
+}

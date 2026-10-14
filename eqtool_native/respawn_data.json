@@ -1,0 +1,893 @@
+{
+ "default": 400,
+ "source": "EQTool EQToolShared.dll (ZoneParser)",
+ "zones": {
+  "airplane": {
+   "contains": [],
+   "exact": {},
+   "zone": 28800
+  },
+  "akanon": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "arena": {
+   "contains": [],
+   "exact": {},
+   "zone": 0
+  },
+  "befallen": {
+   "contains": [],
+   "exact": {},
+   "zone": 1140
+  },
+  "beholder": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "blackburrow": {
+   "contains": [],
+   "exact": {},
+   "zone": 1320
+  },
+  "burningwood": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "butcher": {
+   "contains": [
+    [
+     "Guard Armandin",
+     1440
+    ],
+    [
+     "Guard Belg",
+     1440
+    ],
+    [
+     "Guard Burr",
+     1440
+    ],
+    [
+     "Guard Clendin",
+     1440
+    ],
+    [
+     "Guard Dunil",
+     1440
+    ],
+    [
+     "Guard Dunn",
+     1440
+    ],
+    [
+     "Guard Gabel",
+     1440
+    ],
+    [
+     "Guard Gonin",
+     1440
+    ],
+    [
+     "Guard Grae",
+     1440
+    ],
+    [
+     "Guard Haendar",
+     1440
+    ],
+    [
+     "Guard Haldin",
+     1440
+    ],
+    [
+     "Guard Hartt",
+     1440
+    ],
+    [
+     "Guard Kizzburr",
+     1440
+    ],
+    [
+     "Guard Kyte",
+     1440
+    ],
+    [
+     "Guard Mandin",
+     1440
+    ],
+    [
+     "Guard Norin",
+     1440
+    ],
+    [
+     "Guard Rundul",
+     1440
+    ],
+    [
+     "Guard Rylin",
+     1440
+    ],
+    [
+     "Guard Sornn",
+     1440
+    ],
+    [
+     "Guard Srinn",
+     1440
+    ],
+    [
+     "Guard Zyburr",
+     1120
+    ],
+    [
+     "Guard Zyburr",
+     1120
+    ],
+    [
+     "Peg Leg",
+     400
+    ],
+    [
+     "Keldyn Dunfire",
+     400
+    ],
+    [
+     "Margyl Darklin",
+     400
+    ],
+    [
+     "Crytil Dunfire",
+     400
+    ],
+    [
+     "Qued",
+     400
+    ],
+    [
+     "Barma Dunfire",
+     400
+    ]
+   ],
+   "exact": {
+    "atwin keladryn": 400,
+    "balen kalgunn": 400,
+    "durkis battlemore": 400,
+    "happ findlefinn": 400,
+    "nyzil bloodforge": 400,
+    "thar kelgand": 400,
+    "walnan": 400
+   },
+   "zone": 900
+  },
+  "cabeast": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "cabwest": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "cauldron": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "cazicthule": {
+   "contains": [],
+   "exact": {},
+   "zone": 1320
+  },
+  "charasis": {
+   "contains": [],
+   "exact": {
+    "drusella sathir": 86400
+   },
+   "zone": 1230
+  },
+  "chardok": {
+   "contains": [],
+   "exact": {
+    "an apprentice kennelmaster": 1200,
+    "kennel master al`ele": 1200
+   },
+   "zone": 1080
+  },
+  "citymist": {
+   "contains": [],
+   "exact": {
+    "a black reaver": 7200
+   },
+   "zone": 1320
+  },
+  "cobaltscar": {
+   "contains": [],
+   "exact": {},
+   "zone": 1200
+  },
+  "commons": {
+   "contains": [],
+   "exact": {
+    "a shadowed man": 600
+   },
+   "zone": 400
+  },
+  "crushbone": {
+   "contains": [],
+   "exact": {},
+   "zone": 540
+  },
+  "crystal": {
+   "contains": [],
+   "exact": {},
+   "zone": 885
+  },
+  "dalnir": {
+   "contains": [],
+   "exact": {},
+   "zone": 720
+  },
+  "dreadlands": {
+   "contains": [],
+   "exact": {
+    "a glacier yeti": 960,
+    "a tundra yeti": 960
+   },
+   "zone": 400
+  },
+  "droga": {
+   "contains": [],
+   "exact": {},
+   "zone": 1230
+  },
+  "eastkarana": {
+   "contains": [],
+   "exact": {},
+   "zone": 360
+  },
+  "eastwastes": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "ecommons": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "emeraldjungle": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "erudnext": {
+   "contains": [
+    [
+     "shark",
+     400
+    ]
+   ],
+   "exact": {},
+   "zone": 1440
+  },
+  "erudnint": {
+   "contains": [
+    [
+     "shark",
+     400
+    ]
+   ],
+   "exact": {},
+   "zone": 1440
+  },
+  "erudsxing": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "everfrost": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "fearplane": {
+   "contains": [],
+   "exact": {},
+   "zone": 28800
+  },
+  "feerrott": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "felwithea": {
+   "contains": [],
+   "exact": {},
+   "zone": 1440
+  },
+  "felwitheb": {
+   "contains": [],
+   "exact": {},
+   "zone": 1440
+  },
+  "fieldofbone": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "firiona": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "freporte": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "freportn": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "freportw": {
+   "contains": [],
+   "exact": {},
+   "zone": 1440
+  },
+  "frontiermtns": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "frozenshadow": {
+   "contains": [],
+   "exact": {},
+   "zone": 1200
+  },
+  "gfaydark": {
+   "contains": [],
+   "exact": {},
+   "zone": 425
+  },
+  "greatdivide": {
+   "contains": [],
+   "exact": {},
+   "zone": 640
+  },
+  "grobb": {
+   "contains": [],
+   "exact": {},
+   "zone": 1440
+  },
+  "growthplane": {
+   "contains": [],
+   "exact": {
+    "a protector of growth": 1440,
+    "tunare": 1
+   },
+   "zone": 43200
+  },
+  "gukbottom": {
+   "contains": [],
+   "exact": {},
+   "zone": 1680
+  },
+  "guktop": {
+   "contains": [],
+   "exact": {},
+   "zone": 990
+  },
+  "halas": {
+   "contains": [],
+   "exact": {},
+   "zone": 1440
+  },
+  "hateplane": {
+   "contains": [],
+   "exact": {},
+   "zone": 28800
+  },
+  "highkeep": {
+   "contains": [
+    [
+     "Goblin",
+     600
+    ]
+   ],
+   "exact": {
+    "a noble": 360,
+    "captain boshinko": 360,
+    "guard blayle": 180,
+    "guard chopin": 180,
+    "isabella cellus": 360
+   },
+   "zone": 1080
+  },
+  "highpass": {
+   "contains": [],
+   "exact": {
+    "grenix mucktail": 1320,
+    "hagnis shralok": 1320,
+    "recfek shralok": 1320,
+    "vexven mucktail": 1320,
+    "vopuk shralok": 1320
+   },
+   "zone": 300
+  },
+  "hole": {
+   "contains": [],
+   "exact": {},
+   "zone": 1290
+  },
+  "iceclad": {
+   "contains": [],
+   "exact": {
+    "ergrez shortpaw": 360
+   },
+   "zone": 400
+  },
+  "innothule": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "kael": {
+   "contains": [],
+   "exact": {
+    "derakor the vindicator": 25200,
+    "keldor dek`torek": 64800
+   },
+   "zone": 1680
+  },
+  "kaesora": {
+   "contains": [],
+   "exact": {},
+   "zone": 1080
+  },
+  "kaladima": {
+   "contains": [],
+   "exact": {
+    "king kazon stormhammer": 400
+   },
+   "zone": 1440
+  },
+  "kaladimb": {
+   "contains": [],
+   "exact": {},
+   "zone": 1440
+  },
+  "karnor": {
+   "contains": [],
+   "exact": {},
+   "zone": 1620
+  },
+  "kedge": {
+   "contains": [],
+   "exact": {},
+   "zone": 1320
+  },
+  "kerraridge": {
+   "contains": [],
+   "exact": {},
+   "zone": 1065
+  },
+  "kithicor": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "kurn": {
+   "contains": [],
+   "exact": {},
+   "zone": 1100
+  },
+  "lakeofillomen": {
+   "contains": [],
+   "exact": {
+    "a bloodgill goblin": 780,
+    "chancellor of di`zok": 7200
+   },
+   "zone": 400
+  },
+  "lakerathe": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "lavastorm": {
+   "contains": [],
+   "exact": {
+    "a shadowed man": 360
+   },
+   "zone": 400
+  },
+  "lfaydark": {
+   "contains": [],
+   "exact": {
+    "a brownie guard": 960
+   },
+   "zone": 400
+  },
+  "mischiefplane": {
+   "contains": [],
+   "exact": {},
+   "zone": 4210
+  },
+  "mistmoore": {
+   "contains": [],
+   "exact": {
+    "an advisor": 14400
+   },
+   "zone": 1320
+  },
+  "misty": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "najena": {
+   "contains": [],
+   "exact": {},
+   "zone": 1140
+  },
+  "necropolis": {
+   "contains": [],
+   "exact": {},
+   "zone": 1620
+  },
+  "nektulos": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "neriaka": {
+   "contains": [],
+   "exact": {
+    "capee": 400,
+    "jacker": 480,
+    "karnan": 480,
+    "mrak": 480,
+    "oosa shadowthumper": 480,
+    "svunsa": 400,
+    "uglan": 400
+   },
+   "zone": 1440
+  },
+  "neriakb": {
+   "contains": [],
+   "exact": {},
+   "zone": 1440
+  },
+  "neriakc": {
+   "contains": [],
+   "exact": {
+    "nallar q`tentu": 400
+   },
+   "zone": 1440
+  },
+  "northkarana": {
+   "contains": [],
+   "exact": {},
+   "zone": 360
+  },
+  "nro": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "nurga": {
+   "contains": [],
+   "exact": {},
+   "zone": 1230
+  },
+  "oasis": {
+   "contains": [],
+   "exact": {
+    "a spectre": 990
+   },
+   "zone": 400
+  },
+  "oggok": {
+   "contains": [],
+   "exact": {},
+   "zone": 1440
+  },
+  "oot": {
+   "contains": [],
+   "exact": {
+    "guardian of k`arnon": 1320,
+    "gull skytalon": 28800
+   },
+   "zone": 360
+  },
+  "overthere": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "paineel": {
+   "contains": [],
+   "exact": {
+    "guard ackin": 1500,
+    "guard captain latorl": 1440,
+    "guard hetorzuz": 1500,
+    "guard ishvlor": 1500,
+    "guard korlack": 1500,
+    "guard lecknar": 1500,
+    "guard lehlufa": 360,
+    "guard lesunra": 360,
+    "guard mertanor": 1500,
+    "guard pendleir": 360,
+    "guard perelin": 360,
+    "guard polzdurn": 1500,
+    "guard pomnares": 360,
+    "guard potren": 1500,
+    "guard sheltuin": 1500,
+    "guard tynaryn": 1500,
+    "guard yerlash": 1500
+   },
+   "zone": 630
+  },
+  "paw": {
+   "contains": [],
+   "exact": {
+    "an ishva lteth gnoll": 1680,
+    "the ishva mal": 1680
+   },
+   "zone": 1320
+  },
+  "permafrost": {
+   "contains": [],
+   "exact": {},
+   "zone": 1320
+  },
+  "qcat": {
+   "contains": [],
+   "exact": {
+    "a spectre": 1440
+   },
+   "zone": 720
+  },
+  "qey2hh1": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "qeynos": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "qeynos2": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "qeytoqrg": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "qrg": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "rathemtn": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "rivervale": {
+   "contains": [],
+   "exact": {},
+   "zone": 1320
+  },
+  "runnyeye": {
+   "contains": [],
+   "exact": {},
+   "zone": 1320
+  },
+  "sebilis": {
+   "contains": [],
+   "exact": {
+    "sebilite protector": 9900,
+    "tolapumj": 9900
+   },
+   "zone": 1620
+  },
+  "sirens": {
+   "contains": [],
+   "exact": {},
+   "zone": 1680
+  },
+  "skyfire": {
+   "contains": [],
+   "exact": {},
+   "zone": 780
+  },
+  "skyshrine": {
+   "contains": [],
+   "exact": {},
+   "zone": 1800
+  },
+  "sleeper": {
+   "contains": [],
+   "exact": {},
+   "zone": 28800
+  },
+  "soldunga": {
+   "contains": [],
+   "exact": {},
+   "zone": 1080
+  },
+  "soldungb": {
+   "contains": [
+    [
+     "Fire Giant",
+     28800
+    ]
+   ],
+   "exact": {
+    "king tranix": 28800,
+    "magi rokyl": 28800,
+    "warlord skarlon": 28800
+   },
+   "zone": 1320
+  },
+  "soltemple": {
+   "contains": [],
+   "exact": {},
+   "zone": 300
+  },
+  "southkarana": {
+   "contains": [],
+   "exact": {
+    "a treant": 240,
+    "high shaman phido": 1320
+   },
+   "zone": 360
+  },
+  "sro": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "steamfont": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "stonebrunt": {
+   "contains": [],
+   "exact": {},
+   "zone": 670
+  },
+  "swampofnohope": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "templeveeshan": {
+   "contains": [],
+   "exact": {
+    "a crimson claw hatchling": 360,
+    "a shard wyvern hatchling": 360,
+    "a skyseeker hatchling": 360,
+    "an ebon wing hatchling": 360,
+    "an emerald eye hatchling": 360
+   },
+   "zone": 4400
+  },
+  "thurgadina": {
+   "contains": [],
+   "exact": {},
+   "zone": 420
+  },
+  "thurgadinb": {
+   "contains": [],
+   "exact": {},
+   "zone": 420
+  },
+  "timorous": {
+   "contains": [],
+   "exact": {},
+   "zone": 720
+  },
+  "tox": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "trakanon": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "unrest": {
+   "contains": [],
+   "exact": {},
+   "zone": 1320
+  },
+  "veeshan": {
+   "contains": [],
+   "exact": {},
+   "zone": 4320
+  },
+  "velketor": {
+   "contains": [],
+   "exact": {},
+   "zone": 1970
+  },
+  "wakening": {
+   "contains": [],
+   "exact": {
+    "a faerie dragon": 420,
+    "a storm giant surveyor": 420,
+    "a suit of sentient armor": 870,
+    "a tar goo": 870
+   },
+   "zone": 400
+  },
+  "warrens": {
+   "contains": [],
+   "exact": {
+    "cave bat lord": 2880,
+    "foodmaster rargnar": 1200,
+    "high shaman drogik": 2880,
+    "huntmaster furgrl": 2880,
+    "king gragnar": 2880,
+    "lorekeeper roggik": 2880,
+    "packmaster dledsh": 960,
+    "prince bragnar": 3420,
+    "smithy rrarrgin": 1200,
+    "the muglwump": 2100,
+    "trainer daxgrr": 1200,
+    "warlord drrig": 780
+   },
+   "zone": 400
+  },
+  "warslikswood": {
+   "contains": [],
+   "exact": {},
+   "zone": 400
+  },
+  "westwastes": {
+   "contains": [],
+   "exact": {
+    "a faerie dragon": 400,
+    "amcilla": 30600,
+    "an elder wyvern": 1800,
+    "atpaev": 30600,
+    "ayillish": 28800,
+    "bufa": 30600,
+    "crial": 30600,
+    "derasinel": 28800,
+    "draazak": 28800,
+    "entariz": 28800,
+    "gangel": 30600,
+    "harla dar": 10800,
+    "honvar": 30600,
+    "ionat": 28800,
+    "jen sapara": 28800,
+    "kar sapara": 28800,
+    "karkona": 28800,
+    "linbrak": 30600,
+    "lord gossimerwind": 400,
+    "makala": 30600,
+    "onava": 30600,
+    "quoza": 30600,
+    "sivar": 30600,
+    "uiliak": 30600,
+    "yal": 30600
+   },
+   "zone": 400
+  }
+ }
+}

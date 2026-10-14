@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Old name for `everlast`, kept so existing shortcuts keep working.
+HERE="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+exec "$HERE/everlast" "$@"

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Everlast by Sarekrn: EverQuest timers for Linux</title>
+<meta name="description" content="Everlast is a native Linux log parser for Project 1999 EverQuest: spell timers, voice alerts, maps, DPS, raid helpers. No Wine needed.">
+<link rel="icon" type="image/png" href="assets/everlast-32.png">
+<style>
+  :root {
+    --bg: #161d28; --panel: #212a38; --line: #2f3b4e; --text: #e9e0c9; --dim: #98a2b3;
+    --brass: #c9a35a; --brass-hi: #ecd08c; --brass-lo: #96763a; --ink: #161d28;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text); line-height: 1.6;
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+  }
+  a { color: var(--brass-hi); }
+  a:hover { color: #fff; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header.top { border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; align-items: center; gap: 14px; padding-top: 14px; padding-bottom: 14px; }
+  header.top img { width: 36px; height: 36px; border-radius: 8px; }
+  header.top strong { font-family: Georgia, "Times New Roman", serif; font-size: 20px; letter-spacing: .02em; }
+  header.top nav { margin-left: auto; display: flex; gap: 18px; font-size: 14px; flex-wrap: wrap; }
+  header.top nav a { color: var(--dim); text-decoration: none; }
+  header.top nav a:hover { color: var(--brass-hi); }
+  .hero { padding: 64px 0 48px; text-align: center; background:
+      radial-gradient(900px 340px at 50% -80px, rgba(201,163,90,.18), transparent 70%); }
+  .hero img { width: 128px; height: 128px; border-radius: 26px; box-shadow: 0 10px 40px rgba(0,0,0,.45); }
+  .hero h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: clamp(38px, 7vw, 60px);
+    margin: 22px 0 6px; letter-spacing: .01em; }
+  .hero .by { color: var(--brass); font-size: 17px; margin-bottom: 18px; }
+  .hero p.lead { max-width: 640px; margin: 0 auto 28px; font-size: 19px; color: #d6ceb8; }
+  .btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 10px; font-weight: 600; text-decoration: none;
+    border: 1px solid var(--brass-lo); color: var(--brass-hi); background: transparent; }
+  .btn.primary { background: linear-gradient(180deg, var(--brass-hi), var(--brass)); color: var(--ink); border-color: var(--brass); }
+  .btn:hover { filter: brightness(1.1); color: inherit; }
+  .btn.primary:hover { color: var(--ink); }
+  .badge { display: inline-block; margin-top: 22px; font-size: 13px; color: var(--dim); border: 1px solid var(--line);
+    border-radius: 999px; padding: 4px 12px; }
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 { font-family: Georgia, "Times New Roman", serif; font-size: 28px; margin: 0 0 8px; }
+  h2 + p.sub { color: var(--dim); margin: 0 0 26px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+  .card h3 { margin: 0 0 8px; font-size: 17px; color: var(--brass-hi); }
+  .card ul { margin: 0; padding-left: 18px; color: #d6ceb8; }
+  .card li { margin: 3px 0; }
+  .card p { margin: 0; color: #d6ceb8; }
+  pre, code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  pre { background: #0f151e; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; overflow-x: auto; margin: 10px 0 18px; }
+  code { background: #0f151e; border: 1px solid var(--line); border-radius: 5px; padding: 1px 6px; font-size: .92em; }
+  pre code { border: 0; padding: 0; background: none; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 6px 0 18px; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--brass); font-weight: 600; }
+  ol.steps { padding-left: 22px; } ol.steps li { margin: 8px 0; }
+  .shots { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .shots figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .shots img { display: block; width: 100%; height: auto; }
+  .shots figcaption { padding: 10px 14px; font-size: 14px; color: var(--dim); }
+  details { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 18px; margin: 10px 0; }
+  details summary { cursor: pointer; font-weight: 600; color: var(--brass-hi); }
+  details p { margin: 10px 0 2px; color: #d6ceb8; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--dim); font-size: 14px; }
+  footer p { margin: 6px 0; }
+  .note { border-left: 3px solid var(--brass); background: rgba(201,163,90,.08); padding: 10px 16px; border-radius: 0 8px 8px 0; color: #d6ceb8; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <img src="assets/everlast-128.png" alt="">
+    <strong>Everlast</strong>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="#faq">FAQ</a>
+      <a href="#" data-gh="">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <img src="assets/everlast-256.png" alt="The Everlast icon: a brass hourglass on dark slate">
+    <h1>Everlast</h1>
+    <div class="by">by Sarekrn</div>
+    <p class="lead">Spell timers, voice alerts, maps, a DPS meter and raid helpers for Project 1999 EverQuest.
+      Written for Linux in plain Python, so there is no Wine or .NET for the tool itself. It only reads your log file.</p>
+    <div class="btns">
+      <a class="btn primary" href="#" data-gh="/releases/latest">Download the latest release</a>
+      <a class="btn" href="#install">How to install</a>
+    </div>
+    <span class="badge">Beta &middot; Linux &middot; looking for testers</span>
+  </div>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <h2>What it does</h2>
+    <p class="sub">Everything below can be switched off in Settings. Use only what you want.</p>
+    <div class="grid">
+      <div class="card"><h3>Spell and buff timers</h3><ul>
+        <li>Correct Project 1999 buff durations, with the DoT extra tick</li>
+        <li>Separate windows for buffs, mob debuffs and respawns</li>
+        <li>Recast timers and your own custom timers</li></ul></div>
+      <div class="card"><h3>Alerts you can see and hear</h3><ul>
+        <li>Big transparent banner, with the colour and size you choose</li>
+        <li>Computer voice, plus recorded clips for charm break, root break and buff faded</li>
+        <li>Fizzles, interrupts, buffs fading, group invites, watched spells, pansy trap</li></ul></div>
+      <div class="card"><h3>Maps</h3><ul>
+        <li>Detects your zone and shows the right map automatically</li>
+        <li>Zone search, z-level filter, mob names, follow-me</li></ul></div>
+      <div class="card"><h3>Raid helpers</h3><ul>
+        <li>Dragon Roar countdown, enrage and Death Touch warnings</li>
+        <li>Timers for raid mobs' zone-wide spells</li>
+        <li>Boat timers, Ring War rounds and a CH chain tracker with a "you are next" warning</li>
+        <li>Mana Sieve counter per mob, for enchanters</li></ul></div>
+      <div class="card"><h3>Custom triggers</h3><ul>
+        <li>"When this log line appears, show this and say that"</li>
+        <li>EQTool's 15 built-in triggers included</li>
+        <li>Import and export EQTool trigger files</li></ul></div>
+      <div class="card"><h3>Made for playing</h3><ul>
+        <li>Lock overlays so clicks pass through to the game, with per-window opacity</li>
+        <li>KOS or SAFE spoken when you /consider a mob</li>
+        <li>DPS meter with per-fight history</li>
+        <li>Follows the character you are playing; sits in the system tray</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="shots" hidden>
+  <div class="wrap">
+    <h2>Screenshots</h2>
+    <p class="sub">&nbsp;</p>
+    <div class="shots" id="shotgrid"></div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <h2>Install</h2>
+    <p class="sub">Linux with Python 3 and Tk. An X11 session works best.</p>
+    <ol class="steps">
+      <li>Install Tk for Python:
+        <table>
+          <tr><th>Distro</th><th>Command</th></tr>
+          <tr><td>Debian / Ubuntu / Mint / Pop</td><td><code>sudo apt install python3-tk</code></td></tr>
+          <tr><td>Fedora</td><td><code>sudo dnf install python3-tkinter</code></td></tr>
+          <tr><td>Arch / Manjaro / SteamOS</td><td><code>sudo pacman -S tk</code></td></tr>
+          <tr><td>openSUSE</td><td><code>sudo zypper install python3-tk</code></td></tr>
+        </table></li>
+      <li>Download the latest release, unzip it, and run:
+        <pre><code>cd everlast
+./install.sh      # optional: adds an "everlast" command and an app-menu entry
+./everlast</code></pre></li>
+      <li>In game, turn logging on: type <code>/log on</code> (or set <code>Log=TRUE</code> in <code>eqclient.ini</code>).
+        Every character you play needs it.</li>
+      <li>For spoken alerts, install a voice: <code>sudo apt install espeak-ng</code> (Debian family).</li>
+    </ol>
+    <p class="note">On first start Everlast looks for your EverQuest folder (Wine, Lutris, Bottles, Steam/Proton,
+      ~/Games). If it can't find it, Settings opens so you can pick the folder that holds <code>eqgame.exe</code>
+      and <code>spells_us.txt</code>.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <details><summary>Does it work on Windows or macOS?</summary>
+      <p>Not at the moment. Everlast is built and tested for Linux. A Windows version may come later.</p></details>
+    <details><summary>Does it touch the game?</summary>
+      <p>No. It only reads the <code>eqlog_&lt;character&gt;_&lt;server&gt;.txt</code> file that EverQuest writes,
+        the same way EQTool does. It never reads game memory or sends anything to the game.</p></details>
+    <details><summary>Nothing shows up for one of my characters.</summary>
+      <p>That character's logging is probably off. Type <code>/log on</code> in game on it. Everlast's status line
+        tells you when the log it follows has been silent for a while. <em>Tools &rarr; Character log</em> lets you
+        pick a character's log by hand.</p></details>
+    <details><summary>The overlays won't let me click through, or opacity does nothing.</summary>
+      <p>Click-through and transparency need an X11 session with a compositing window manager. On Wayland,
+        X11 apps run through XWayland and some of this can't work. <em>Tools &rarr; Diagnostics</em> explains what your
+        desktop allows.</p></details>
+    <details><summary>Is this an official tool?</summary>
+      <p>No. Everlast is a fan project. It is not affiliated with Project 1999, Daybreak Game Company or EQTool.</p></details>
+  </div>
+</section>
+
+<section id="help">
+  <div class="wrap">
+    <h2>Testing and feedback</h2>
+    <p>Everlast is in beta and I am looking for testers, especially on desktops other than Cinnamon.
+      If something breaks, please <a href="#" data-gh="/issues/new/choose">open an issue</a> and include your distro,
+      desktop, the version shown in the main window and what you expected to happen. The log file
+      <code>~/.cache/eqtool-native/eqtool.log</code> helps a lot.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Everlast by Sarekrn. Inspired by EQTool. Not affiliated with Project 1999, Daybreak Game Company or EQTool.</p>
+    <p>EverQuest is a registered trademark of Daybreak Game Company LLC.</p>
+    <p><a href="#" data-gh="">Source on GitHub</a></p>
+  </div>
+</footer>
+
+<script>
+  // Work out the repository from the Pages address (user.github.io/repo) so the links
+  // need no editing. Anywhere else they fall back to staying on this page.
+  (function () {
+    var host = location.hostname, m = host.match(/^([^.]+)\.github\.io$/);
+    var repo = location.pathname.split("/").filter(Boolean)[0] || "";
+    var base = m && repo ? "https://github.com/" + m[1] + "/" + repo : "";
+    document.querySelectorAll("[data-gh]").forEach(function (a) {
+      if (base) a.href = base + a.getAttribute("data-gh");
+    });
+    // Screenshots: add the PNG files named below to docs/screenshots/ and they appear.
+    var shots = [["timers.png", "Buff and mob timers"], ["alerts.png", "The alert banner"],
+                 ["map.png", "The map"], ["dps.png", "DPS meter"], ["main.png", "The main window"]];
+    var grid = document.getElementById("shotgrid"), shown = 0;
+    shots.forEach(function (s) {
+      var img = new Image();
+      img.onload = function () {
+        var f = document.createElement("figure");
+        img.alt = s[1]; f.appendChild(img);
+        var c = document.createElement("figcaption"); c.textContent = s[1]; f.appendChild(c);
+        grid.appendChild(f); shown++;
+        document.getElementById("shots").hidden = false;
+      };
+      img.src = "screenshots/" + s[0];
+    });
+  })();
+</script>
+</body>
+</html>

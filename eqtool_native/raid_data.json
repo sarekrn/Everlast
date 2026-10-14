@@ -1,0 +1,253 @@
+{
+ "aoe": {
+  "dreadlands": [
+   {
+    "npc": "Gorenaire",
+    "spells": [
+     "Dragon Roar",
+     "Freezing Breath"
+    ]
+   }
+  ],
+  "emeraldjungle": [
+   {
+    "npc": "Severilous",
+    "spells": [
+     "Dragon Roar",
+     "Ceticious Cloud"
+    ]
+   }
+  ],
+  "growthplane": [
+   {
+    "npc": "Ail the Elder",
+    "spells": [
+     "Cloud of Silence",
+     "Silver Breath"
+    ]
+   }
+  ],
+  "necropolis": [
+   {
+    "npc": "Zlandicar",
+    "spells": [
+     "Dragon Roar",
+     "Stun Breath",
+     "Rotting Flesh",
+     "Putrefy Flesh"
+    ]
+   }
+  ],
+  "permafrost": [
+   {
+    "npc": "Lady Vox",
+    "spells": [
+     "Dragon Roar",
+     "Frost Breath"
+    ]
+   }
+  ],
+  "sebilis": [
+   {
+    "npc": "Trakanon",
+    "spells": [
+     "Blinding Fear",
+     "Poison Breath"
+    ]
+   }
+  ],
+  "skyfire": [
+   {
+    "npc": "Talendor",
+    "spells": [
+     "Dragon Roar",
+     "Immolating Breath"
+    ]
+   }
+  ],
+  "skyshrine": [
+   {
+    "npc": "Lord Yelinak",
+    "spells": [
+     "Mind Cloud",
+     "Ice breath"
+    ]
+   }
+  ],
+  "soldungb": [
+   {
+    "npc": "Lord Nagafen",
+    "spells": [
+     "Dragon Roar",
+     "Lava Breath"
+    ]
+   }
+  ],
+  "templeveeshan": [
+   {
+    "npc": "Dozekar the Cursed",
+    "spells": [
+     "Silver Breath"
+    ]
+   },
+   {
+    "npc": "Gozzrem",
+    "spells": [
+     "Frost Breath"
+    ]
+   },
+   {
+    "npc": "Lendiniara the Keeper",
+    "spells": [
+     "Silver Breath"
+    ]
+   },
+   {
+    "npc": "Telkorenar",
+    "spells": [
+     "Lava Breath"
+    ]
+   },
+   {
+    "npc": "Aaryonar",
+    "spells": [
+     "Cloud of Disempowerment"
+    ]
+   },
+   {
+    "npc": "Cekenar",
+    "spells": [
+     "Electric Blast"
+    ]
+   },
+   {
+    "npc": "Dagarn the Destroyer",
+    "spells": [
+     "Wave of Heat"
+    ]
+   },
+   {
+    "npc": "Eashen of the Sky",
+    "spells": [
+     "Rain of Molten Lava",
+     "Wave of Cold"
+    ]
+   },
+   {
+    "npc": "Jorlleag",
+    "spells": [
+     "Frost Breath"
+    ]
+   },
+   {
+    "npc": "Lady Mirenilla",
+    "spells": [
+     "Cloud of Fear"
+    ]
+   },
+   {
+    "npc": "Lady Nevederia",
+    "spells": [
+     "Bellowing Winds"
+    ]
+   },
+   {
+    "npc": "Lord Feshlak",
+    "spells": [
+     "Wave of Cold"
+    ]
+   },
+   {
+    "npc": "Lord Koi'Doken",
+    "spells": [
+     "Tsunami"
+    ]
+   },
+   {
+    "npc": "Lord Kreizenn",
+    "spells": [
+     "Wave of Flame"
+    ]
+   },
+   {
+    "npc": "Lord Vyemm",
+    "spells": [
+     "Scream of Chaos"
+    ]
+   },
+   {
+    "npc": "Sevalak",
+    "spells": [
+     "Chaos Breath"
+    ]
+   },
+   {
+    "npc": "Vulak`Aerr",
+    "spells": [
+     "Ancient Breath"
+    ]
+   },
+   {
+    "npc": "Zlexak",
+    "spells": [
+     "Diseased Cloud"
+    ]
+   }
+  ],
+  "veeshan": [
+   {
+    "npc": "Xygoz",
+    "spells": [
+     "Mesmerizing Breath"
+    ]
+   },
+   {
+    "npc": "Silverwing",
+    "spells": [
+     "Chaos Breath"
+    ]
+   },
+   {
+    "npc": "Phara Dar",
+    "spells": [
+     "Stun Breath"
+    ]
+   },
+   {
+    "npc": "Nexona",
+    "spells": [
+     "Stream of Acid"
+    ]
+   },
+   {
+    "npc": "Hoshkar",
+    "spells": [
+     "Diseased Cloud"
+    ]
+   },
+   {
+    "npc": "Druushk",
+    "spells": [
+     "Lightning Breath"
+    ]
+   }
+  ],
+  "westwastes": [
+   {
+    "npc": "Klandicar",
+    "spells": [
+     "Silver Breath",
+     "Dragon Roar"
+    ]
+   }
+  ]
+ },
+ "death_touch_npcs": [
+  "Fright",
+  "Dread"
+ ],
+ "dt_seconds": 45,
+ "enrage_seconds": 12,
+ "roar_seconds": 36,
+ "roar_spell": "Dragon Roar"
+}

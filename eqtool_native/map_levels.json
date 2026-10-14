@@ -1,0 +1,490 @@
+{
+ "default_height": 10.0,
+ "source": "EQTool EQToolShared.dll (ZoneParser)",
+ "zones": {
+  "airplane": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "akanon": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "arena": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "befallen": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "beholder": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "blackburrow": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "burningwood": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "butcher": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "cabeast": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "cabwest": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "cauldron": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "cazicthule": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "charasis": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "chardok": {
+   "height": 30.0,
+   "show_all": false
+  },
+  "citymist": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "cobaltscar": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "commons": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "crushbone": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "crystal": {
+   "height": 20.0,
+   "show_all": false
+  },
+  "dalnir": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "dreadlands": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "droga": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "eastkarana": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "eastwastes": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "ecommons": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "emeraldjungle": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "erudnext": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "erudnint": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "erudsxing": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "everfrost": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "fearplane": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "feerrott": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "felwithea": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "felwitheb": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "fieldofbone": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "firiona": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "freporte": {
+   "height": 15.0,
+   "show_all": false
+  },
+  "freportn": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "freportw": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "frontiermtns": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "frozenshadow": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "gfaydark": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "greatdivide": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "grobb": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "growthplane": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "gukbottom": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "guktop": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "halas": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "hateplane": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "highkeep": {
+   "height": 6.0,
+   "show_all": false
+  },
+  "highpass": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "hole": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "iceclad": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "innothule": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "kael": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "kaesora": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "kaladima": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "kaladimb": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "karnor": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "kedge": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "kerraridge": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "kithicor": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "kurn": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "lakeofillomen": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "lakerathe": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "lavastorm": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "lfaydark": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "mischiefplane": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "mistmoore": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "misty": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "najena": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "necropolis": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "nektulos": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "neriaka": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "neriakb": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "neriakc": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "northkarana": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "nro": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "nurga": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "oasis": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "oggok": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "oot": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "overthere": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "paineel": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "paw": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "permafrost": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "qcat": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "qey2hh1": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "qeynos": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "qeynos2": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "qeytoqrg": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "qrg": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "rathemtn": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "rivervale": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "runnyeye": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "sebilis": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "sirens": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "skyfire": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "skyshrine": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "sleeper": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "soldunga": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "soldungb": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "soltemple": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "southkarana": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "sro": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "steamfont": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "stonebrunt": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "swampofnohope": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "templeveeshan": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "thurgadina": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "thurgadinb": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "timorous": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "tox": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "trakanon": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "unrest": {
+   "height": 4.0,
+   "show_all": false
+  },
+  "veeshan": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "velketor": {
+   "height": 10.0,
+   "show_all": false
+  },
+  "wakening": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "warrens": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "warslikswood": {
+   "height": 10.0,
+   "show_all": true
+  },
+  "westwastes": {
+   "height": 10.0,
+   "show_all": true
+  }
+ }
+}

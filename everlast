@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Launch Everlast by Sarekrn from wherever this folder lives.
+HERE="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+cd "$HERE" && exec python3 -m eqtool_native "$@"
