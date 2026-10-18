@@ -1,4 +1,4 @@
-# Everlast by Sarekrn  (v1.7)
+# Everlast by Sarekrn
 
 Everlast (formerly "EQTool Native") is a native Linux (and cross-platform) replacement for EQTool's core features on
 Project 1999: spell and buff timers, a DPS meter, zone maps, and mob info with
