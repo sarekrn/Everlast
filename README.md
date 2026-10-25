@@ -1,3 +1,4 @@
+<img width="256" height="256" alt="everlast-256" src="https://github.com/user-attachments/assets/9e488d96-5477-44f4-b1fb-accd9a8f845b" />
 # Everlast by Sarekrn
 
 Everlast (formerly "EQTool Native") is a native Linux (and cross-platform) replacement for EQTool's core features on
